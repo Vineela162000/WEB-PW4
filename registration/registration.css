@@ -1,0 +1,55 @@
+body {
+	background: url(background_registration.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.well {
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-top: 10px;
+	/* Add animation */
+	animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px); /* Add vertical animation */
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0); /* Add vertical animation */
+	}
+}
+
+.underline {
+	text-decoration: underline;
+	/* Add transition */
+	transition: color 2.5s ease-in-out;
+}
+
+.underline:hover {
+	color: red; /* Change the color on hover */
+	text-decoration: none;
+	/* Add animation */
+	animation: shake 0.5s linear infinite;
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-5px); /* Add horizontal animation */
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(5px); /* Add horizontal animation */
+	}
+}

@@ -1,0 +1,41 @@
+body {
+	background: url(background_tenantsearch.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+.well {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.post-title {
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333; /* Update with desired color */
+	transition: color 0.3s ease-in-out;
+}
+
+.post-title:hover {
+	color: #555; /* Update with desired color */
+}
+
+@media screen and (max-width: 767px) {
+	.post-title {
+		margin: 8px 0 5px 0;
+		font-size: 16px;
+	}
+}
